@@ -1,0 +1,35 @@
+.header {
+    background-color: rgb(64, 61, 61); 
+    width: 100%;
+    padding: 10px 40px;  
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;           
+    box-sizing: border-box;      
+}
+
+.nav-list {
+    align-items: center;
+    display: flex;
+    gap: 40px;              
+    list-style: none;      
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    color: aliceblue;       
+    text-decoration: none; 
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #f7f1db;        
+}
+
+.logo {
+    width: 45px;
+    height: auto;
+}
