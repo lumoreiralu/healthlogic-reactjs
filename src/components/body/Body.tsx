@@ -1,7 +1,11 @@
 
 function Body(){
     return(
-        <h1>holaa body</h1>
+        
+        <div>
+            <h1>Body Component</h1>
+            <p>This is the body of the application.</p>
+        </div>
     );
 }
 export default Body;
