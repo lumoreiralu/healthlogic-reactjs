@@ -81,7 +81,7 @@ function Body(){
 
     return(
         
-        <div>
+        <div className="body-forms">
             <FormularioCard<PacienteForm>
                 titulo="Nuevo Paciente"
                 campos={camposPaciente}
