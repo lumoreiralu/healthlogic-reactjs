@@ -45,8 +45,8 @@ function Body() {
 
 
     const camposMedida: Campo<MedidaForm>[] = useMemo(() => [
-        { name: "altura", label: "Altura (cm)", type: "number", step: 0.01, validation: { required: "Obligatorio" } },
-        { name: "peso", label: "Peso (kg)", type: "number", step: 0.01, validation: { required: "Obligatorio" } },
+        { name: "altura", label: "Altura (Ej:1.89)", type: "number", step: 0.01, validation: { required: "Obligatorio" } },
+        { name: "peso", label: "Peso (Ej:75.5)", type: "number", step: 0.01, validation: { required: "Obligatorio" } },
         {
             name: "dni_paciente",
             label: "DNI del Paciente",
