@@ -1,25 +1,106 @@
-.form-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    border-radius: 10px;
+/* Importamos una tipografía limpia desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Reset global para tipografía */
+* {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    box-sizing: border-box;
 }
 
-.btn-submit {
-    background-color: #2b52de;
-    color: #eff0f3;
-    border: none;
-    padding: 10px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+/* Tarjeta del Formulario */
+.form-card {
+    background-color: #ffffff;
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 32px 28px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 
+                0 8px 10px -6px rgba(0, 0, 0, 0.01);
+    border: 1px solid #e2e8f0;
 }
 
-.form-group{
+/* Título */
+.form-card h2, .form-card h1 {
+    color: #0f172a;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+    letter-spacing: -0.025em;
+}
+
+/* Grupo de Inputs */
+.form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     width: 100%;
+}
+
+/* Etiquetas (Labels) */
+.form-group label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+/* Inputs de texto/número */
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    color: #1e293b;
+    background-color: #f8fafc;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Efecto al hacer clic en un input */
+.form-group input:focus, 
+.form-group select:focus {
+    background-color: #ffffff;
+    border-color: #2b52de;
+    box-shadow: 0 0 0 4px rgba(43, 82, 222, 0.15);
+}
+
+/* Placeholder */
+.form-group input::placeholder {
+    color: #94a3b8;
+}
+
+/* Botón Submit */
+.btn-submit {
+    width: 100%;
+    background-color: #2b52de;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 6px -1px rgba(43, 82, 222, 0.2);
+}
+
+.btn-submit:hover {
+    background-color: #1d40b8;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px -2px rgba(43, 82, 222, 0.3);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+.error-msg {
+    color: #ef4444;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 4px;
 }

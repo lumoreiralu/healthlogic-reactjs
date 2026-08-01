@@ -44,7 +44,12 @@ function Body(){
         {
             name: "sexo",
             label: "Sexo",
-            type: "text",
+            type: "select",
+            options: [
+                {label: "Seleccione una opción", value: ""},
+                {label: "Masculino", value: "m"},
+                {label: "Femenino", value: "f"},
+            ],
             validation: { required: "El campo Sexo es obligatorio" },
         },
     ];
